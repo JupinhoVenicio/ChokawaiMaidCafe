@@ -12,34 +12,33 @@ public class MaidPersonality {
 
         do {
 
-            System.out.println("""
-
-                    ╔═══════════════════════════════════════════╗
-                    ║          ~ Chokawai Maid Café ~           ║
-                    ║  (=^.^=) Welcome! Take a seat! (=^.^=)    ║
-                    ║                                           ║
-                    ║         Please choose your Maid ;3        ║
-                    ╠═══════════════════════════════════════════╣
-                    ║ 1. DereDere   (Sweet & loving)            ║
-                    ║ 2. Tsundere   (Intense & cold)            ║
-                    ║ 3. Dandere    (Quiet & shy)               ║
-                    ║ 4. Yandere    (Obsessive & devoted)       ║
-                    ║ 5. Genki      (Energetic & cheerful)      ║
-                    ║ 6. Nyandere   (Cutesy & kitty)            ║
-                    ╠═══════════════════════════════════════════╣
-                    ║  Please enter the number of your choice:  ║
-                    ╚═══════════════════════════════════════════╝
-                          """);
+            System.out.println(""+
+                    "\n╔═══════════════════════════════════════════╗"+
+                    "\n║          ~ Chokawai Maid Café ~           ║"+
+                    "\n║  (=^.^=) Welcome! Take a seat! (=^.^=)    ║"+
+                    "\n║                                           ║"+
+                    "\n║         Please choose your Maid ;3        ║"+
+                    "\n╠═══════════════════════════════════════════╣"+
+                    "\n║ 1. DereDere   (Sweet & loving)            ║"+
+                    "\n║ 2. Tsundere   (Intense & cold)            ║"+
+                    "\n║ 3. Dandere    (Quiet & shy)               ║"+
+                    "\n║ 4. Yandere    (Obsessive & devoted)       ║"+
+                    "\n║ 5. Genki      (Energetic & cheerful)      ║"+
+                    "\n║ 6. Nyandere   (Cutesy & kitty)            ║"+
+                    "\n╠═══════════════════════════════════════════╣"+
+                    "\n║  Please enter the number of your choice:  ║"+
+                    "\n╚═══════════════════════════════════════════╝");
+                         
 
             maid = teclado.nextInt();
 
             if (maid < 1 || maid > 6) {
 
-                System.out.println("""
-                        ╔═════════════════════════════════════════╗
-                        ║      Invalid input! Try again~ >:3      ║
-                        ╚═════════════════════════════════════════╝
-                                            """);
+                System.out.println(""+
+                        "\n╔═════════════════════════════════════════╗"+
+                        "\n║      Invalid input! Try again~ >:3      ║"+
+                        "\n╚═════════════════════════════════════════╝");
+                                        
 
             }
 
@@ -110,7 +109,7 @@ public class MaidPersonality {
     public static String maidAddProductMessage() {
 
         String mensagem = "Testing...";
-        int escolherMensagemAleatoria = random.nextInt(1, 4);
+        int escolherMensagemAleatoria = (random.nextInt(3))+1;
 
         switch (maid) {
 
@@ -203,7 +202,7 @@ public class MaidPersonality {
     public static String maidRemoveProductMessage() {
 
         String mensagem = "Testing...";
-        int escolherMensagemAleatoria = random.nextInt(1, 4);
+        int escolherMensagemAleatoria = (random.nextInt(3))+1;
 
         switch (maid) {
 
@@ -296,7 +295,7 @@ public class MaidPersonality {
     public static String maidCheckoutMessage() {
 
         String mensagem = "Testing...";
-        int escolherMensagemAleatoria = random.nextInt(1, 4);
+        int escolherMensagemAleatoria = (random.nextInt(3))+1;
 
         switch (maid) {
 

@@ -6,12 +6,11 @@ public class App {
 
         String sNome = "Produtos";
         String sDescricao = "Exemplo";
-        
+
         double dPreco = 0;
         boolean bEmCheckout = false;
         int iQuant = 0;
         double dTotal = 0;
-        
 
         public void adicionarProduto() {
 
@@ -26,12 +25,11 @@ public class App {
             iQuant--;
 
             if (iQuant <= 0) {
-                iQuant=0;
+                iQuant = 0;
                 bEmCheckout = false;
-                
 
             }
-            this.dTotal = dPreco*iQuant;
+            this.dTotal = dPreco * iQuant;
 
         }
 
@@ -43,29 +41,27 @@ public class App {
 
         MaidPersonality.maidEscolha();
 
-        System.out.println("""
-                ╔══════════════════════════════════════════════════╗
-                ║ ╭──────────────────────────────────────────────╮ ║           ( (
-                ║ │             Chokawai Maid Café               │ ║             ) )
-                ║ │──────────────────────────────────────────────│ ║          ________
-                ║ │  (=^.^=)  Welcome, Master~  (=^.^=)          │ ║          |      | ]
-                ║ │  Try our purr-fect cakes & bubble tea~       │ ║          \      /
-                ║ │  Every order comes with a smile :3           │ ║           `----'
-                ║ ╰──────────────────────────────────────────────╯ ║        -----||-----
-                ╚══════════════════════════════════════════════════╝
+        System.out.println(""+
+            "\n╔══════════════════════════════════════════════════╗"+
+            "\n║ ╭──────────────────────────────────────────────╮ ║            ( ("+
+            "\n║ │             Chokawai Maid Café               │ ║             ) )"+
+            "\n║ │──────────────────────────────────────────────│ ║          ________"+
+            "\n║ │  (=^.^=)  Welcome, Master~  (=^.^=)          │ ║          |      | ]"+
+            "\n║ │  Try our purr-fect cakes & bubble tea~       │ ║          |      /"+
+            "\n║ │  Every order comes with a smile :3           │ ║           `----'"+
+            "\n║ ╰──────────────────────────────────────────────╯ ║        -----||-----"+
+            "\n╚══════════════════════════════════════════════════╝\n");
             
-                   """);
-                           System.out.println(MaidPersonality.maidName()+"Maid : "+MaidPersonality.maidIntro());
+                   
+                           System.out.println(MaidPersonality.maidName()+" Maid : \""+MaidPersonality.maidIntro()+"\"6");
                            
                            do{
-                            System.out.println("""
-
-                            ╔══════════════════════════════════╗
-                            ║ 1 - Food (Delicious treats!)     ║
-                            ║ 2 - Drinks (Made with love~)     ║
-                            ║ 3 - Checkout (All ready master~) ║
-                            ╚══════════════════════════════════╝
-                       """);
+                            System.out.println(""+
+                            "\n╔══════════════════════════════════╗"+
+                            "\n║ 1 - Food (Delicious treats!)     ║"+
+                            "\n║ 2 - Drinks (Made with love~)     ║"+
+                            "\n║ 3 - Checkout (All ready master~) ║"+
+                            "\n╚══════════════════════════════════╝");
 
                        menu = teclado.nextInt();
 
@@ -81,7 +77,7 @@ public class App {
 
                         break;
                         default:
-                        System.out.println(MaidPersonality.maidError())
+                        System.out.println(MaidPersonality.maidError());
 
 
 
@@ -89,10 +85,9 @@ public class App {
                        }
 
 
-                           }while(Checkout.checkoutConfirmacao!=1)
+                           }while(Checkout.checkoutConfirmacao!=1);
                 
 
-                    
-
+                          
     }
 }
