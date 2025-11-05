@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-import java.util.random.*;
+
 
 public class MaidPersonality {
 
@@ -25,7 +25,7 @@ public class MaidPersonality {
                     ║ 3. Dandere    (Quiet & shy)               ║
                     ║ 4. Yandere    (Obsessive & devoted)       ║
                     ║ 5. Genki      (Energetic & cheerful)      ║
-                    ║ 6. Bakadere   (Clumsy & cute)             ║
+                    ║ 6. Nyandere   (Cutesy & kitty)            ║
                     ╠═══════════════════════════════════════════╣
                     ║  Please enter the number of your choice:  ║
                     ╚═══════════════════════════════════════════╝
@@ -69,7 +69,7 @@ public class MaidPersonality {
                 mensagem = "Genki";
                 break;
             case 6:
-                mensagem = "Bakadere";
+                mensagem = "Nyandere";
                 break;
 
         }
@@ -99,7 +99,7 @@ public class MaidPersonality {
                 mensagem = "Let's go, Master! Food, drinks, checkout, whatever you choose, I'll make it awesome!";
                 break;
             case 6:
-                mensagem = "Eeeh~ I forgot what comes first! Food? Drinks? Oh! You pick, Master! Hehehe~";
+                mensagem = "Nyaa~ I forgotted what comes furst! Foodies? Drinkies? Oh! You pick, Master-nyan! Hehehe~";
                 break;
 
         }
@@ -183,13 +183,13 @@ public class MaidPersonality {
             case 6:
                 switch (escolherMensagemAleatoria) {
                     case 1:
-                        mensagem = "Ah-oops! I almost dropped it! But don't worry, it's safe now! Hehe~";
+                        mensagem = "Nyaa~ Oopsie! I almost fumbled it, mew! But no worries, it's all safe and sound now, hehe~!";
                         break;
                     case 2:
-                        mensagem = "You picked that one? Eeeh~ I was just thinking about it too!";
+                        mensagem = "Nyaa, you picked that one? Eeeh~ I was just thinking about it too, meow!";
                         break;
                     case 3:
-                        mensagem = "Wait... did I add it right? Oh, phew! Yay, it's in your checkout now~";
+                        mensagem = "Wait... did I gets it right, nya? O-oh, phew! Yay, it's in youw checkouts now, meow~";
                         break;
                 }
                 break;
@@ -276,13 +276,13 @@ public class MaidPersonality {
             case 6:
                 switch (escolherMensagemAleatoria) {
                     case 1:
-                        mensagem = "Eeeeh~ I just added that! Wait-oh, you changed your mind? Hehe, okay~!";
+                        mensagem = "Nyaa~ I just added that, meow! Wait, oh, you changed your mind, purrrr? Hehe, okay-nyan~!";
                         break;
                     case 2:
-                        mensagem = "Oopsie! Did I mess up? Oh, you meant to remove it... okay, fixed!";
+                        mensagem = "Nyaa~ Oopsie-daisies! Did I make a boo-boo, meow? Oh, you wanted it gone, purrfect! All fixed now, nya!";
                         break;
                     case 3:
-                        mensagem = "Huh? It's gone already? Aww... I'll miss that one, it was so sparkly~!";
+                        mensagem = "Nyaa? Gone alweady? Aww... I'll miss it, it was so sparkly, meow~!";
                         break;
                 }
                 break;
@@ -369,13 +369,13 @@ public class MaidPersonality {
             case 6:
                 switch (escolherMensagemAleatoria) {
                     case 1:
-                        mensagem = "Ah-oops! I almost spilled your tea again! Hehehe~ thank you for being so patient, Master!";
+                        mensagem = "Ah-oops! I almost spilled your yum-yum tea again, meow! Hehehe~ Tankyu for being so patient, my purrfect Master, nya~!";
                         break;
                     case 2:
-                        mensagem = "Eeeh? You're leaving already? I was just about to bring you the... uh... what was it again?";
+                        mensagem = "Nyaaa? You're going already, meow? I was just gonna get you the... uh... what was it, nya?";
                         break;
                     case 3:
-                        mensagem = "Hehe~ I might be a little clumsy, but I'm your clumsy maid! Come back soon, okay?";
+                        mensagem = "Hehe~ Nyaaa, I might be a wittle clumsy, but I'm gonna be your clumsy maid, meow! Pwease come back again soon, okay nya?";
                         break;
                 }
                 break;
@@ -407,7 +407,7 @@ public class MaidPersonality {
                 mensagem = "Whoopsie! That's not one of the options, Master! Let's try again, okay? You got this!";
                 break;
             case 6:
-                mensagem = "Eeeh?! I think you broke the menu! ...Oh wait-no, that's just me, hehe~ Try again, Master!";
+                mensagem = "Eeeh?! Nyaaa, I think you b-broke the menu, meow! ...Oh wait-no, that's just me, hehe~ Try again, Master nyaaa!";
                 break;
 
         }
