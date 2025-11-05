@@ -38,6 +38,8 @@ public class App {
         Scanner teclado = new Scanner(System.in);
         int menu = -1;
 
+        MaidPersonality.maidEscolha();
+
         System.out.println("""
                 ╔══════════════════════════════════════════════════╗
                 ║ ╭──────────────────────────────────────────────╮ ║
@@ -48,12 +50,16 @@ public class App {
                 ║ │  Every order comes with a smile :3           │ ║
                 ║ ╰──────────────────────────────────────────────╯ ║
                 ╚══════════════════════════════════════════════════╝
-                    ╔══════════════════════════════════╗
-                    ║ 1 - Food                         ║
-                    ║ 2 - Drinks                       ║
-                    ║ 3 - Maid Personality             ║
-                    ║ 4 - Checkout                     ║
-                    ╚══════════════════════════════════╝
+                   """);
+                           System.out.println("Maid: "+MaidPersonality.maidIntro());
+                           
+                System.out.println("""
+
+                         ╔══════════════════════════════════╗
+                         ║ 1 - Food (Delicious treats!)     ║
+                         ║ 2 - Drinks (Made with love~)     ║
+                         ║ 3 - Checkout (All ready master~) ║
+                         ╚══════════════════════════════════╝
                     """);
 
                     

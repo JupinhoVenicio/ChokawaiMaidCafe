@@ -47,7 +47,7 @@ public class MaidPersonality {
 
     }
 
-    public static void maidIntro() {
+    public static String maidIntro() {
 
         String mensagem = "Testing...";
 
@@ -73,11 +73,11 @@ public class MaidPersonality {
                 break;
 
         }
-        System.out.print(mensagem);
+        return mensagem;
 
     }
 
-    public static void maidAddProductMessage() {
+    public static String maidAddProductMessage() {
 
         String mensagem = "Testing...";
         int escolherMensagemAleatoria = random.nextInt(1, 4);
@@ -166,11 +166,11 @@ public class MaidPersonality {
 
         }
 
-        System.out.print(mensagem);
+        return mensagem;
 
     }
 
-    public static void maidRemoveProductMessage() {
+    public static String maidRemoveProductMessage() {
 
         String mensagem = "Testing...";
         int escolherMensagemAleatoria = random.nextInt(1, 4);
@@ -259,11 +259,11 @@ public class MaidPersonality {
 
         }
 
-        System.out.print(mensagem);
+        return mensagem;
 
     }
 
-    public static void maidCheckoutMessage() {
+    public static String maidCheckoutMessage() {
 
         String mensagem = "Testing...";
         int escolherMensagemAleatoria = random.nextInt(1, 4);
@@ -352,10 +352,10 @@ public class MaidPersonality {
 
         }
 
-        System.out.print(mensagem);
+        return mensagem;
 
     }
-    public static void maidError() {
+    public static String maidError() {
 
         String mensagem = "Testing...";
 
@@ -381,7 +381,7 @@ public class MaidPersonality {
                 break;
 
         }
-        System.out.print(mensagem);
+        return mensagem;
 
     }
 
