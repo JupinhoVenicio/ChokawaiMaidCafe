@@ -47,6 +47,36 @@ public class MaidPersonality {
 
     }
 
+    public static String maidName() {
+
+        String mensagem = "Testing...";
+
+        switch (maid) {
+
+            case 1:
+                mensagem = "DereDere";
+                break;
+            case 2:
+                mensagem = "Tsundere";
+                break;
+            case 3:
+                mensagem = "Dandere";
+                break;
+            case 4:
+                mensagem = "Yandere";
+                break;
+            case 5:
+                mensagem = "Genki";
+                break;
+            case 6:
+                mensagem = "Bakadere";
+                break;
+
+        }
+        return mensagem;
+
+    }
+    
     public static String maidIntro() {
 
         String mensagem = "Testing...";
