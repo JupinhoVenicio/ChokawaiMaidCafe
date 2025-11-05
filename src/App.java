@@ -52,8 +52,7 @@ public class App {
                 ╚══════════════════════════════════════════════════╝
             
                    """);
-                         
-                   System.out.println(MaidPersonality.maidIntro());
+                           System.out.println(MaidPersonality.maidName()+"Maid : "+MaidPersonality.maidIntro());
                            
                 System.out.println("""
 
