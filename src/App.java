@@ -42,16 +42,18 @@ public class App {
 
         System.out.println("""
                 ╔══════════════════════════════════════════════════╗
-                ║ ╭──────────────────────────────────────────────╮ ║
-                ║ │             Chokawai Maid Café               │ ║
-                ║ │──────────────────────────────────────────────│ ║
-                ║ │  (=^.^=)  Welcome, Master~  (=^.^=)          │ ║
-                ║ │  Try our purr-fect cakes & bubble tea~       │ ║
-                ║ │  Every order comes with a smile :3           │ ║
-                ║ ╰──────────────────────────────────────────────╯ ║
+                ║ ╭──────────────────────────────────────────────╮ ║           ( (
+                ║ │             Chokawai Maid Café               │ ║             ) )
+                ║ │──────────────────────────────────────────────│ ║          ________
+                ║ │  (=^.^=)  Welcome, Master~  (=^.^=)          │ ║          |      | ]
+                ║ │  Try our purr-fect cakes & bubble tea~       │ ║          \      /
+                ║ │  Every order comes with a smile :3           │ ║           `----'
+                ║ ╰──────────────────────────────────────────────╯ ║        -----||-----
                 ╚══════════════════════════════════════════════════╝
+            
                    """);
-                           System.out.println("Maid: "+MaidPersonality.maidIntro());
+                         
+                   System.out.println(MaidPersonality.maidIntro());
                            
                 System.out.println("""
 
