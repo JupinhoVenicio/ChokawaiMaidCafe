@@ -5,10 +5,13 @@ public class App {
     public class Produto {
 
         String sNome = "Produtos";
+        String sDescricao = "Exemplo";
+        
         double dPreco = 0;
         boolean bEmCheckout = false;
         int iQuant = 0;
         double dTotal = 0;
+        
 
         public void adicionarProduto() {
 
@@ -54,14 +57,40 @@ public class App {
                    """);
                            System.out.println(MaidPersonality.maidName()+"Maid : "+MaidPersonality.maidIntro());
                            
-                System.out.println("""
+                           do{
+                            System.out.println("""
 
-                         ╔══════════════════════════════════╗
-                         ║ 1 - Food (Delicious treats!)     ║
-                         ║ 2 - Drinks (Made with love~)     ║
-                         ║ 3 - Checkout (All ready master~) ║
-                         ╚══════════════════════════════════╝
-                    """);
+                            ╔══════════════════════════════════╗
+                            ║ 1 - Food (Delicious treats!)     ║
+                            ║ 2 - Drinks (Made with love~)     ║
+                            ║ 3 - Checkout (All ready master~) ║
+                            ╚══════════════════════════════════╝
+                       """);
+
+                       menu = teclado.nextInt();
+
+                       switch(menu){
+                        case 1:
+                        Alimentos.foodMenu();
+                        break;
+                        case 2:
+                        Bebidas.drinksMenu();
+                        break;
+                        case 3:
+                        Checkout.checkoutMenu();
+
+                        break;
+                        default:
+                        System.out.println(MaidPersonality.maidError())
+
+
+
+
+                       }
+
+
+                           }while(Checkout.checkoutConfirmacao!=1)
+                
 
                     
 
