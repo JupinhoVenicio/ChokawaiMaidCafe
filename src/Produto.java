@@ -5,8 +5,9 @@ public class Produto {
         static String sDescricao = "Exemplo";
         static double dPreco = 0;
         static boolean bTemVariante = false;
+        
 
-       static  double dTotal = 0;
+       
         static int iVariante = 0;
         static String sVar1 = "Test";
         static String sVarDesc1 = "Test";
