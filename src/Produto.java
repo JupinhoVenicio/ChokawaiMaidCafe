@@ -1,6 +1,8 @@
+import java.util.ArrayList;
 
 public class Produto {
 
+         
          String sNome = "Produtos";
          String sDescricao = "Exemplo";
          double dPreco = 0;

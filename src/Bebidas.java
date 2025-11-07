@@ -8,7 +8,7 @@ public class Bebidas {
     static Produto[] drinks = new Produto[6];
     static int menuF = -1;
 
-    static ArrayList<Produto> produtoEmCheckout = new ArrayList<>();
+    
 
     public static void escolherVariante() {
 
@@ -30,7 +30,7 @@ public class Bebidas {
             menuVar = teclado.nextInt();
 
             if (menuVar < 1 || menuVar > 2) {
-                System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError());
+                System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
             }
 
         } while (menuVar < 1 || menuVar > 2);
@@ -42,19 +42,19 @@ public class Bebidas {
                 bebidaEmCheckout.sNome = drinks[menuF].sVar1;
                 bebidaEmCheckout.sDescricao = drinks[menuF].sVarDesc1;
                 bebidaEmCheckout.bTemVariante = drinks[menuF].bTemVariante;
-                produtoEmCheckout.add(bebidaEmCheckout);
+                App.produtoEmCheckout.add(bebidaEmCheckout);
                 break;
             case 2:
                 bebidaEmCheckout.dPreco = drinks[menuF].dVar2Preco;
                 bebidaEmCheckout.sNome = drinks[menuF].sVar2;
                 bebidaEmCheckout.sDescricao = drinks[menuF].sVarDesc2;
                 bebidaEmCheckout.bTemVariante = drinks[menuF].bTemVariante;
-                produtoEmCheckout.add(bebidaEmCheckout);
+                App.produtoEmCheckout.add(bebidaEmCheckout);
                 break;
 
         }
 
-        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage());
+        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage()+"\"");
 
     }
 
@@ -80,7 +80,7 @@ public class Bebidas {
                 menuConfirmar = teclado.nextInt();
 
                 if (menuConfirmar < 1 || menuConfirmar > 2) {
-                    System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError());
+                    System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
                 }
 
             } while (menuConfirmar < 1 || menuConfirmar > 2);
@@ -91,10 +91,10 @@ public class Bebidas {
                 bebidaEmCheckout.sNome = drinks[menuF].sNome;
                 bebidaEmCheckout.sDescricao = drinks[menuF].sDescricao;
                 bebidaEmCheckout.bTemVariante = drinks[menuF].bTemVariante;
-                produtoEmCheckout.add(bebidaEmCheckout);
+                App.produtoEmCheckout.add(bebidaEmCheckout);
 
                 System.out.println(
-                        "\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage());
+                        "\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage()+"\"");
 
             }
         }
@@ -156,7 +156,7 @@ public class Bebidas {
             System.out.println("║    ~~~~~~~~~~  ( =^.^= )  ~~~~~~~~~~   ║");
             System.out.println("╚════════════════════════════════════════╝");
 
-            System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidBebidas());
+            System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidBebidas()+"\"");
 
             input = teclado.nextInt();
 
@@ -166,7 +166,7 @@ public class Bebidas {
 
             if (menuF < 0 || menuF > 4) {
 
-                System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError());
+                System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
                 continue;
 
             } else {

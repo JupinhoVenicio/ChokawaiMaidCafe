@@ -605,4 +605,35 @@ public class MaidPersonality {
 
     }
 
+    public static String maidErrorCheckout() {
+
+        String mensagem = "Testing...";
+
+        switch (maid) {
+
+            case 1:
+                mensagem = "Aww~! There's nothing here yet, Master~! You haven't ordered anything sweet for me to serve~!";
+                break;
+            case 2:
+                mensagem = "H-hmph! Of course it's empty! You didn't even order anything yet, dummy!";
+                break;
+            case 3:
+                mensagem = "Um... it's empty... maybe you'll pick something later... I'll wait quietly...";
+                break;
+            case 4:
+                mensagem = "No orders yet...? That's okay... I'll wait. You will come back to me... right, Master?";
+                break;
+            case 5:
+                mensagem = "Eh?! Empty already?! C'mon, Master~! Let's fill this up with tasty goodies!";
+                break;
+            case 6:
+                mensagem = "Nya?! Eh?! It's... e-empty?! Did I furgget to write sumthin' down agaaain, nya? Ehehe~";
+                break;
+
+        }
+        return mensagem;
+
+    }
+
+
 }

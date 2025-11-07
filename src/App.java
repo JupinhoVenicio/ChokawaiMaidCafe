@@ -1,6 +1,9 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
+
+    static ArrayList<Produto> produtoEmCheckout = new ArrayList<>();
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
@@ -21,13 +24,16 @@ public class App {
 
         System.out.println(MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidIntro() + "\"");
 
-        do {
+        while (Checkout.checkoutConfirmacao != 1)
+
+        {
             System.out.println("" +
                     "\n╔══════════════════════════════════╗" +
                     "\n║ 1 - Food (Delicious treats!)     ║" +
                     "\n║ 2 - Drinks (Made with love~)     ║" +
                     "\n║ 3 - Checkout (All ready master~) ║" +
                     "\n╚══════════════════════════════════╝");
+                    
 
             menu = teclado.nextInt();
 
@@ -39,15 +45,19 @@ public class App {
                     Bebidas.drinksMenu();
                     break;
                 case 3:
-                    Checkout.checkoutMenu();
+                    Checkout.checkoutMenu(produtoEmCheckout);
 
                     break;
                 default:
-                    System.out.println(MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError());
+                    System.out.println(MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
 
             }
 
-        } while (Checkout.checkoutConfirmacao != 1);
+        }
+
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~");
+        System.out.println(MaidPersonality.maidName()+" Maid : \""+MaidPersonality.maidCheckoutMessage()+"\"");
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
         teclado.close();
     }
 

@@ -7,7 +7,7 @@ public class Alimentos {
   static Produto[] foods = new Produto[6];
   static int menuF = -1;
 
-  static ArrayList<Produto> produtoEmCheckout = new ArrayList<>();
+ 
 
   public static void escolherVariante() {
 
@@ -29,7 +29,7 @@ public class Alimentos {
       menuVar = teclado.nextInt();
 
       if (menuVar < 1 || menuVar > 2) {
-        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError());
+        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
       }
 
     } while (menuVar < 1 || menuVar > 2);
@@ -41,19 +41,19 @@ public class Alimentos {
         alimentoEmCheckout.sNome = foods[menuF].sVar1;
         alimentoEmCheckout.sDescricao = foods[menuF].sVarDesc1;
         alimentoEmCheckout.bTemVariante = foods[menuF].bTemVariante;
-        produtoEmCheckout.add(alimentoEmCheckout);
+        App.produtoEmCheckout.add(alimentoEmCheckout);
         break;
       case 2:
         alimentoEmCheckout.dPreco = foods[menuF].dVar2Preco;
         alimentoEmCheckout.sNome = foods[menuF].sVar2;
         alimentoEmCheckout.sDescricao = foods[menuF].sVarDesc2;
         alimentoEmCheckout.bTemVariante = foods[menuF].bTemVariante;
-        produtoEmCheckout.add(alimentoEmCheckout);
+        App.produtoEmCheckout.add(alimentoEmCheckout);
         break;
 
     }
 
-    System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage());
+    System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage()+"\"");
 
   }
 
@@ -79,7 +79,7 @@ public class Alimentos {
         menuConfirmar = teclado.nextInt();
 
         if (menuConfirmar < 1 || menuConfirmar > 2) {
-          System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError());
+          System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
         }
 
       } while (menuConfirmar < 1 || menuConfirmar > 2);
@@ -90,9 +90,9 @@ public class Alimentos {
         alimentoEmCheckout.sNome = foods[menuF].sNome;
         alimentoEmCheckout.sDescricao = foods[menuF].sDescricao;
         alimentoEmCheckout.bTemVariante = foods[menuF].bTemVariante;
-        produtoEmCheckout.add(alimentoEmCheckout);
+        App.produtoEmCheckout.add(alimentoEmCheckout);
 
-        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage());
+        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage()+"\"");
 
       }
     }
@@ -136,7 +136,7 @@ public class Alimentos {
     foods[2].sVarDesc2 = "One of our recommendations for ones with more savory mouths~! Packed with smoked \nsalmon (blub)~ creamy cheese and seasoned with some chive. Yummy indeed~!";
 
     foods[3] = new Produto();
-    foods[3].sNome = "Purrfect ~ Aoi Hōseki Pie";
+    foods[3].sNome = "Purrfect ~ Aoi Hoseki Pie";
     foods[3].sDescricao = "Delicious tart filled with sweet, juicy blueberries~!  Each bite is like tiny blue jewels \ndancing on your tongue~ Coated  with a jizz of magical sugar~  Yum yum~!";
     foods[3].dPreco = 20;
     foods[3].bTemVariante = false;
@@ -163,7 +163,7 @@ public class Alimentos {
       System.out.println("║ 1. Pancakes                            ║");
       System.out.println("║ 2. Parfaits                            ║");
       System.out.println("║ 3. Japanese Crepes                     ║");
-      System.out.println("║ 4. Purrfect ~ Aoi Hōseki Pie           ║");
+      System.out.println("║ 4. Purrfect ~ Aoi HOseki Pie           ║");
       System.out.println("║ 5. Fuwa Fuwa :3 ~ Amai Miruku Waffles  ║");
       System.out.println("║ 6. Nya~! Kokoro Gâteau                 ║");
       System.out.println("║                                        ║");
@@ -172,7 +172,7 @@ public class Alimentos {
       System.out.println("║    ~~~~~~~~~~  ( =^.^= )  ~~~~~~~~~~   ║");
       System.out.println("╚════════════════════════════════════════╝");
 
-      System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAlimentos());
+      System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAlimentos()+"\"");
 
       input = teclado.nextInt();
 
@@ -182,7 +182,7 @@ public class Alimentos {
 
       if (menuF < 0 || menuF > 6) {
 
-        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError());
+        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
         continue;
 
       } else {
