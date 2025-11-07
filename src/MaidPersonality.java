@@ -389,6 +389,192 @@ public class MaidPersonality {
 
     }
 
+     public static String maidAlimentos() {
+
+        String mensagem = "Testing...";
+        int escolherMensagemAleatoria = (random.nextInt(3)) + 1;
+
+        switch (maid) {
+
+            case 1:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "Eeeh~ You're hungry, Master? Yay! Let's pick something yummy together~!";
+                        break;
+                    case 2:
+                        mensagem = "I worked hard to make sure everything looks extra tasty just for you~!";
+                        break;
+                    case 3:
+                        mensagem = "Master's appetite makes me so happy~! Let's fill your tummy with love!";
+                        break;
+                }
+                break;
+            case 2:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "Hmph! I'm only showing you the menu because it's my job, not because I care!";
+                        break;
+                    case 2:
+                        mensagem = "B-but... if you don't eat properly, I'll get mad, okay?!";
+                        break;
+                    case 3:
+                        mensagem = "Don't misunderstand! I just want you to order already, that's all!";
+                        break;
+                }
+
+                break;
+            case 3:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "Um... here's the food menu... I hope you find something you like...";
+                        break;
+                    case 2:
+                        mensagem = "Everything here is warm and nice... just like you, Master...";
+                        break;
+                    case 3:
+                        mensagem = "If you pick something sweet... I'll smile a little, okay...?";
+                        break;
+                }
+                break;
+            case 4:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "I picked every dish with love... Only my food is good enough for you, Master.";
+                        break;
+                    case 2:
+                        mensagem = "If anyone else feeds you, I'll be so jealous... so please, eat mine, okay?";
+                        break;
+                    case 3:
+                        mensagem = "You'll stay here and eat, right? With me? Forever...?";
+                        break;
+                }
+                break;
+            case 5:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "Ta-da~! The food menu is here! So many tasty things, right?!";
+                        break;
+                    case 2:
+                        mensagem = "Woohoo~! I bet your stomach's rumbling already! Let's dig in~!";
+                        break;
+                    case 3:
+                        mensagem = "Everything's full of energy and flavor-just like me, hehe~!";
+                        break;
+                }
+                break;
+            case 6:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "Nyaa~ So many noms! I forgotted half of them, teehee~!";
+                        break;
+                    case 2:
+                        mensagem = "Nyah, nya~ Wait up, wait up! Was this the sweets menu or the spicy one, meow? Ehehe~";
+                        break;
+                    case 3:
+                        mensagem = "Don't worry, Meowster! I'll... nyaa-probably remember how to serve it~!";
+                        break;
+                }
+                break;
+
+        }
+
+        return mensagem;
+
+    }
+
+     public static String maidBebidas() {
+
+        String mensagem = "Testing...";
+        int escolherMensagemAleatoria = (random.nextInt(3)) + 1;
+
+        switch (maid) {
+
+            case 1:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "Yay~ Drinks time! I'll pour your favorite one with extra love, Master~!";
+                        break;
+                    case 2:
+                        mensagem = "Let's find something sweet and bubbly to make your heart sparkle~!";
+                        break;
+                    case 3:
+                        mensagem = "A refreshing drink just for you~! Don't forget to smile while sipping, okay~";
+                        break;
+                }
+                break;
+            case 2:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "Hmph! Don't think I made these drinks for you or anything!";
+                        break;
+                    case 2:
+                        mensagem = "J-just pick one already! It's not like I want you to like it or anything...!";
+                        break;
+                    case 3:
+                        mensagem = "Fine, I'll make you something nice... but only because you look thirsty!";
+                        break;
+                }
+
+                break;
+            case 3:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "The drinks are... nice and cool... I hope you like them, Master...";
+                        break;
+                    case 2:
+                        mensagem = "Maybe something warm would be better... if you're feeling tired...";
+                        break;
+                    case 3:
+                        mensagem = "I'll... quietly prepare your drinks. Please enjoy it slowly...";
+                        break;
+                }
+                break;
+            case 4:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "Every sip should remind you of me, okay? Only my drinks can do that~";
+                        break;
+                    case 2:
+                        mensagem = "If someone else makes your drink... I'll have to “fix” that. Hehe~";
+                        break;
+                    case 3:
+                        mensagem = "Sweet or bitter, it doesn't matter—as long as you drink mine~";
+                        break;
+                }
+                break;
+            case 5:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "Woohoo~ Drinks, drinks, drinks! So many choices! Let's gooo~!";
+                        break;
+                    case 2:
+                        mensagem = "Wanna try something fizzy and fun? It'll boost your mood in no time!";
+                        break;
+                    case 3:
+                        mensagem = "Careful not to spill, hehe~ I get too excited around tasty drinks!";
+                        break;
+                }
+                break;
+            case 6:
+                switch (escolherMensagemAleatoria) {
+                    case 1:
+                        mensagem = "Nyah~ Uwah~ I almost dropped the tray, nya! But I saved the drinks, meow~! ";
+                        break;
+                    case 2:
+                        mensagem = "Wait, nyaa... this is the dwink menu...? Oopsy! Welcome, meow~!";
+                        break;
+                    case 3:
+                        mensagem = "Hehe~ Drinks are hawd... but I twied my best, Master~!";
+                        break;
+                }
+                break;
+
+        }
+
+        return mensagem;
+
+    }
+
     public static String maidError() {
 
         String mensagem = "Testing...";

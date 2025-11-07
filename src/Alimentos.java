@@ -20,6 +20,8 @@ public class Alimentos {
         System.out.println("    " + foods[menu].sNome + "\n\n " + foods[menu].sDescricao
             + "\n Preço - U$ " + foods[menu].dPreco);
         System.out.println("\n1 - Sim\t 2 - Não");
+        System.out.println("" +
+          "╚════════════════════════~~");
 
         menuConfirmar = teclado.nextInt();
 
@@ -35,6 +37,8 @@ public class Alimentos {
         alimentoEmCheckout.sNome = foods[menu].sNome;
         alimentoEmCheckout.sDescricao = foods[menu].sDescricao;
         produtoEmCheckout.add(alimentoEmCheckout);
+
+        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage());
 
       }
 
@@ -85,6 +89,8 @@ public class Alimentos {
         break;
 
     }
+
+    System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage());
 
   }
 
@@ -145,7 +151,7 @@ public class Alimentos {
     foods[5].dPreco = 15;
     foods[5].bTemVariante = false;
 
-    
+
 
     ////
 
