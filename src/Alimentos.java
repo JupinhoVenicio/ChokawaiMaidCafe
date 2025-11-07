@@ -180,6 +180,8 @@ public class Alimentos {
       System.out.println("║    ~~~~~~~~~~  ( =^.^= )  ~~~~~~~~~~   ║");
       System.out.println("╚════════════════════════════════════════╝");
 
+      System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAlimentos());
+
       input = teclado.nextInt();
 
       menuF = input - 1;

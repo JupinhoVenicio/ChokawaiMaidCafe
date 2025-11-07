@@ -1,10 +1,6 @@
 import java.util.Scanner;
 
-
 public class App {
-
-     
-   
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
@@ -52,6 +48,7 @@ public class App {
             }
 
         } while (Checkout.checkoutConfirmacao != 1);
-
+        teclado.close();
     }
+
 }
