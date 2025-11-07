@@ -12,7 +12,9 @@ public class Checkout {
 
         if (produtoEmCheckout.size() == 0) {
 
+            System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
             System.out.println(MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidErrorCheckout()+"\"");
+            System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
 
         } else {
 
@@ -40,7 +42,9 @@ public class Checkout {
 
             if(checkoutConfirmacao<1||checkoutConfirmacao>2){
 
+                System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
                  System.out.println(MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
+                 System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
 
             }
 

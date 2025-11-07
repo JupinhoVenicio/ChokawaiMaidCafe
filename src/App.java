@@ -23,7 +23,9 @@ public class App {
                 "\n║ ╰──────────────────────────────────────────────╯ ║     -----||-----" +
                 "\n╚══════════════════════════════════════════════════╝\n");
 
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
         System.out.println(MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidIntro() + "\"");
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
 
         while (Checkout.checkoutConfirmacao != 1)
 
@@ -34,7 +36,6 @@ public class App {
                     "\n║ 2 - Drinks (Made with love~)     ║" +
                     "\n║ 3 - Checkout (All ready master~) ║" +
                     "\n╚══════════════════════════════════╝");
-                    
 
             menu = teclado.nextInt();
 
@@ -50,14 +51,16 @@ public class App {
 
                     break;
                 default:
-                    System.out.println(MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
+                    System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
+                    System.out.println(MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError() + "\"");
+                    System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
 
             }
 
         }
 
         System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
-        System.out.println(MaidPersonality.maidName()+" Maid : \""+MaidPersonality.maidCheckoutMessage()+"\"");
+        System.out.println(MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidCheckoutMessage() + "\"");
         System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
         teclado.close();
     }

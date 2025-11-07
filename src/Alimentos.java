@@ -16,12 +16,12 @@ public class Alimentos {
     do {
       System.out.println("" +
           "\n╔════════════════════════~~" +
-          "\n   Escolha uma variante:\n");
+          "\n    Choose a variant:\n");
       System.out
-          .println("1 - " + foods[menuF].sVar1 + "\n\n" + foods[menuF].sVarDesc1 + "\nPrice - U$ "
+          .println("1 - " + foods[menuF].sVar1 + "\n\n" + foods[menuF].sVarDesc1 + "\n\nPrice - U$ "
               + foods[menuF].dVar1Preco + "\n");
       System.out
-          .println("2 - " + foods[menuF].sVar2 + "\n\n" + foods[menuF].sVarDesc2 + "\nPrice - U$ "
+          .println("2 - " + foods[menuF].sVar2 + "\n\n" + foods[menuF].sVarDesc2 + "\n\nPrice - U$ "
               + foods[menuF].dVar2Preco + "\n");
       System.out.println("" +
           "╚════════════════════════~~");
@@ -29,7 +29,9 @@ public class Alimentos {
       menuVar = teclado.nextInt();
 
       if (menuVar < 1 || menuVar > 2) {
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
         System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
       }
 
     } while (menuVar < 1 || menuVar > 2);
@@ -53,7 +55,9 @@ public class Alimentos {
 
     }
 
+    System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
     System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage()+"\"");
+    System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
 
   }
 
@@ -70,7 +74,7 @@ public class Alimentos {
         System.out.println("" +
             "\n╔════════════════════════~~" +
             "\n         Confirm:\n");
-        System.out.println("    " + foods[menuF].sNome + "\n\n " + foods[menuF].sDescricao
+        System.out.println("    " + foods[menuF].sNome + "\n\n" + foods[menuF].sDescricao
             + "\n\n Price - U$ " + foods[menuF].dPreco);
         System.out.println("\n 1 - Yes\t 2 - No");
         System.out.println("" +
@@ -79,7 +83,9 @@ public class Alimentos {
         menuConfirmar = teclado.nextInt();
 
         if (menuConfirmar < 1 || menuConfirmar > 2) {
+          System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
           System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
+          System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
         }
 
       } while (menuConfirmar < 1 || menuConfirmar > 2);
@@ -92,7 +98,9 @@ public class Alimentos {
         alimentoEmCheckout.bTemVariante = foods[menuF].bTemVariante;
         App.produtoEmCheckout.add(alimentoEmCheckout);
 
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
         System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage()+"\"");
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
 
       }
     }
@@ -172,7 +180,9 @@ public class Alimentos {
       System.out.println("║    ~~~~~~~~~~  ( =^.^= )  ~~~~~~~~~~   ║");
       System.out.println("╚════════════════════════════════════════╝");
 
+      System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
       System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAlimentos()+"\"");
+      System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
 
       input = teclado.nextInt();
 
@@ -182,8 +192,10 @@ public class Alimentos {
 
       if (menuF < 0 || menuF > 6) {
 
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
         System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError()+"\"");
-        continue;
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
+        
 
       } else {
 
