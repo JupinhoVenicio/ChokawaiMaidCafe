@@ -1,19 +1,19 @@
 
 public class Produto {
 
-        static String sNome = "Produtos";
-        static String sDescricao = "Exemplo";
-        static double dPreco = 0;
-        static boolean bTemVariante = false;
+         String sNome = "Produtos";
+         String sDescricao = "Exemplo";
+         double dPreco = 0;
+         boolean bTemVariante;
         
 
        
-        static int iVariante = 0;
-        static String sVar1 = "Test";
-        static String sVarDesc1 = "Test";
-       static  String sVar2 = "Test";
-       static  String sVarDesc2 = "Test";
-       static  double dVar1Preco = 0;
-       static  double dVar2Preco = 0;
+         int iVariante = 0;
+         String sVar1 = "Test";
+         String sVarDesc1 = "Test";
+         String sVar2 = "Test";
+         String sVarDesc2 = "Test";
+         double dVar1Preco = 0;
+         double dVar2Preco = 0;
 
 }

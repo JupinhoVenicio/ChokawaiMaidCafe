@@ -2,53 +2,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Alimentos {
-  Scanner teclado = new Scanner(System.in);
+  static Scanner teclado = new Scanner(System.in);
 
   static Produto[] foods = new Produto[6];
-  static int menu;
+  static int menuF = -1;
 
-  ArrayList<Produto> produtoEmCheckout = new ArrayList<>();
+  static ArrayList<Produto> produtoEmCheckout = new ArrayList<>();
 
-  public void adicionarProduto() {
-
-    int menuConfirmar = 0;
-    if (foods[menu].bTemVariante = false) {
-      do {
-        System.out.println("" +
-            "\n╔════════════════════════~~" +
-            "\n   Confirmar?:\n");
-        System.out.println("    " + foods[menu].sNome + "\n\n " + foods[menu].sDescricao
-            + "\n Preço - U$ " + foods[menu].dPreco);
-        System.out.println("\n1 - Sim\t 2 - Não");
-        System.out.println("" +
-          "╚════════════════════════~~");
-
-        menuConfirmar = teclado.nextInt();
-
-        if (menuConfirmar < 1 || menuConfirmar > 2) {
-          System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError());
-        }
-
-      } while (menuConfirmar < 1 || menuConfirmar > 2);
-
-      if (menuConfirmar == 1) {
-        Produto alimentoEmCheckout = new Produto();
-        alimentoEmCheckout.dPreco = foods[menu].dPreco;
-        alimentoEmCheckout.sNome = foods[menu].sNome;
-        alimentoEmCheckout.sDescricao = foods[menu].sDescricao;
-        produtoEmCheckout.add(alimentoEmCheckout);
-
-        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage());
-
-      }
-
-    } else {
-      escolherVariante();
-    }
-
-  }
-
-  public void escolherVariante() {
+ 
+  public static void escolherVariante() {
 
     int menuVar = 0;
 
@@ -57,11 +19,11 @@ public class Alimentos {
           "\n╔════════════════════════~~" +
           "\n   Escolha uma variante:\n");
       System.out
-          .println("1 - " + foods[menu].sVar1 + "\n\n" + foods[menu].sVarDesc1 + "\nPreço - U$ "
-              + foods[menu].dVar1Preco + "\n");
+          .println("1 - " + foods[menuF].sVar1 + "\n\n" + foods[menuF].sVarDesc1 + "\nPrice - U$ "
+              + foods[menuF].dVar1Preco + "\n");
       System.out
-          .println("2 - " + foods[menu].sVar2 + "\n\n" + foods[menu].sVarDesc2 + "\nPreço - U$ "
-              + foods[menu].dVar2Preco + "\n");
+          .println("2 - " + foods[menuF].sVar2 + "\n\n" + foods[menuF].sVarDesc2 + "\nPrice - U$ "
+              + foods[menuF].dVar2Preco + "\n");
       System.out.println("" +
           "╚════════════════════════~~");
 
@@ -76,15 +38,17 @@ public class Alimentos {
     Produto alimentoEmCheckout = new Produto();
     switch (menuVar) {
       case 1:
-        alimentoEmCheckout.dPreco = foods[menu].dVar1Preco;
-        alimentoEmCheckout.sNome = foods[menu].sVar1;
-        alimentoEmCheckout.sDescricao = foods[menu].sVarDesc1;
+        alimentoEmCheckout.dPreco = foods[menuF].dVar1Preco;
+        alimentoEmCheckout.sNome = foods[menuF].sVar1;
+        alimentoEmCheckout.sDescricao = foods[menuF].sVarDesc1;
+        alimentoEmCheckout.bTemVariante = foods[menuF].bTemVariante;
         produtoEmCheckout.add(alimentoEmCheckout);
         break;
       case 2:
-        alimentoEmCheckout.dPreco = foods[menu].dVar2Preco;
-        alimentoEmCheckout.sNome = foods[menu].sVar2;
-        alimentoEmCheckout.sDescricao = foods[menu].sVarDesc2;
+        alimentoEmCheckout.dPreco = foods[menuF].dVar2Preco;
+        alimentoEmCheckout.sNome = foods[menuF].sVar2;
+        alimentoEmCheckout.sDescricao = foods[menuF].sVarDesc2;
+        alimentoEmCheckout.bTemVariante = foods[menuF].bTemVariante;
         produtoEmCheckout.add(alimentoEmCheckout);
         break;
 
@@ -94,10 +58,56 @@ public class Alimentos {
 
   }
 
+   public static void adicionarProduto() {
+
+    int menuConfirmar = 0;
+
+
+    if (foods[menuF].bTemVariante == true) {
+      escolherVariante();
+
+    } else {
+
+      
+      do {
+        System.out.println("" +
+            "\n╔════════════════════════~~" +
+            "\n   Confirmar?:\n");
+        System.out.println("    " + foods[menuF].sNome + "\n\n " + foods[menuF].sDescricao
+            + "\n Price - U$ " + foods[menuF].dPreco);
+        System.out.println("\n1 - Sim\t 2 - Não");
+        System.out.println("" +
+            "╚════════════════════════~~");
+            
+
+        menuConfirmar = teclado.nextInt();
+
+        if (menuConfirmar < 1 || menuConfirmar > 2) {
+          System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError());
+        }
+
+      } while (menuConfirmar < 1 || menuConfirmar > 2);
+
+      if (menuConfirmar == 1) {
+        Produto alimentoEmCheckout = new Produto();
+        alimentoEmCheckout.dPreco = foods[menuF].dPreco;
+        alimentoEmCheckout.sNome = foods[menuF].sNome;
+        alimentoEmCheckout.sDescricao = foods[menuF].sDescricao;
+        alimentoEmCheckout.bTemVariante = foods[menuF].bTemVariante;
+        produtoEmCheckout.add(alimentoEmCheckout);
+
+        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidAddProductMessage());
+
+      }
+    }
+
+  }
+
+
   public static void foodMenu() {
 
-    int menuFood = -1;
-
+    int input;
+    menuF=-1;
     // CARDAPIO DEFINICAO DE VARIAVEIS//
 
     foods[0] = new Produto();
@@ -151,9 +161,47 @@ public class Alimentos {
     foods[5].dPreco = 15;
     foods[5].bTemVariante = false;
 
-
-
     ////
+
+    do {
+      System.out.println();
+      System.out.println("╔════════════════════════════════════════╗");
+      System.out.println("║            ~~ Foods Menu ~~            ║");
+      System.out.println("╠════════════════════════════════════════╣");
+      System.out.println("║ 1. Pancakes                            ║");
+      System.out.println("║ 2. Parfaits                            ║");
+      System.out.println("║ 3. Japanese Crepes                     ║");
+      System.out.println("║ 4. Purrfect ~ Aoi Hōseki Pie           ║");
+      System.out.println("║ 5. Fuwa Fuwa :3 ~ Amai Miruku Waffles  ║");
+      System.out.println("║ 6. Nya~! Kokoro Gâteau                 ║");
+      System.out.println("║                                        ║");
+      System.out.println("║ 7. Exit Menu                           ║");
+      System.out.println("╠════════════════════════════════════════╣");
+      System.out.println("║    ~~~~~~~~~~  ( =^.^= )  ~~~~~~~~~~   ║");
+      System.out.println("╚════════════════════════════════════════╝");
+
+      input = teclado.nextInt();
+
+      menuF = input - 1;
+
+      System.out.println(menuF);
+
+      if (menuF < 0 || menuF > 6) {
+
+        System.out.println("\n" + MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidError());
+        continue;
+
+      } else {
+
+        if (menuF != 6) {
+
+          adicionarProduto();
+
+        }
+
+      }
+
+    } while (menuF != 6);
 
   }
 
