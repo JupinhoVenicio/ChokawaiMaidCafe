@@ -9,7 +9,6 @@ public class Alimentos {
 
   static ArrayList<Produto> produtoEmCheckout = new ArrayList<>();
 
- 
   public static void escolherVariante() {
 
     int menuVar = 0;
@@ -58,27 +57,24 @@ public class Alimentos {
 
   }
 
-   public static void adicionarProduto() {
+  public static void adicionarProduto() {
 
     int menuConfirmar = 0;
-
 
     if (foods[menuF].bTemVariante == true) {
       escolherVariante();
 
     } else {
 
-      
       do {
         System.out.println("" +
             "\n╔════════════════════════~~" +
-            "\n   Confirmar?:\n");
+            "\n         Confirm:\n");
         System.out.println("    " + foods[menuF].sNome + "\n\n " + foods[menuF].sDescricao
-            + "\n Price - U$ " + foods[menuF].dPreco);
-        System.out.println("\n1 - Sim\t 2 - Não");
+            + "\n\n Price - U$ " + foods[menuF].dPreco);
+        System.out.println("\n 1 - Yes\t 2 - No");
         System.out.println("" +
             "╚════════════════════════~~");
-            
 
         menuConfirmar = teclado.nextInt();
 
@@ -103,16 +99,14 @@ public class Alimentos {
 
   }
 
-
   public static void foodMenu() {
 
     int input;
-    menuF=-1;
+    menuF = -1;
     // CARDAPIO DEFINICAO DE VARIAVEIS//
 
     foods[0] = new Produto();
     foods[0].sNome = "Pancakes";
-    foods[0].sDescricao = "The most dewicious pancakes you'll ever taste~! Yum~";
     foods[0].dVar1Preco = 10;
     foods[0].dVar2Preco = 13;
     foods[0].bTemVariante = true;
@@ -123,7 +117,6 @@ public class Alimentos {
 
     foods[1] = new Produto();
     foods[1].sNome = "Parfaits";
-    foods[1].sDescricao = "Sweety-sweet layers of ice cream, fruit, and fluffy cream~ Mmm!";
     foods[1].dVar1Preco = 9.5;
     foods[1].dVar2Preco = 12;
     foods[1].bTemVariante = true;
@@ -134,7 +127,6 @@ public class Alimentos {
 
     foods[2] = new Produto();
     foods[2].sNome = "Japanese Crepes";
-    foods[2].sDescricao = "The most perfect, cwispiest~, and rolled with all our love~!";
     foods[2].dVar1Preco = 9.5;
     foods[2].dVar2Preco = 8;
     foods[2].bTemVariante = true;
