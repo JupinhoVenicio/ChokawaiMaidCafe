@@ -14,7 +14,8 @@ public class App {
         System.out.println("" +
                 "\n╔══════════════════════════════════════════════════╗" +
                 "\n║ ╭──────────────────────────────────────────────╮ ║         ( (" +
-                "\n║ │             Chokawai Maid Café               │ ║          ) )" +
+                "\n║ │   Chokawai Maid Café | João Vítor, Vitor     │ ║          ) )" +
+                "\n║ │   IFRS Campus Osorio | 101 Info              │ ║          ( (" +
                 "\n║ │──────────────────────────────────────────────│ ║       ________" +
                 "\n║ │      (=^.^=)  Welcome, Master~  (=^.^=)      │ ║       |      | ]" +
                 "\n║ │     Try our perfect cakes & beverages~       │ ║       |      /" +
@@ -55,7 +56,7 @@ public class App {
 
         }
 
-        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~");
+        System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
         System.out.println(MaidPersonality.maidName()+" Maid : \""+MaidPersonality.maidCheckoutMessage()+"\"");
         System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
         teclado.close();
