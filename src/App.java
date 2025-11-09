@@ -27,7 +27,7 @@ public class App {
         System.out.println(MaidPersonality.maidName() + " Maid : \"" + MaidPersonality.maidIntro() + "\"");
         System.out.println("\n~*~*~*~*~*~*~*~*~*~*~*~\n");
 
-        while (Checkout.checkoutConfirmacao != 1)
+        while (Checkout.checkoutConfirmacao != 2)
 
         {
             System.out.println("" +
