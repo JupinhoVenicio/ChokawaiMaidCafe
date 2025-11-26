@@ -55,7 +55,7 @@ public class Checkout {
 
                     int removeProductMenu = 0;
 
-                    while (removeProductMenu != -1)
+                    while (removeProductMenu != -1){
 
                     saldoTotal = 0;
                         if (produtoEmCheckout.size() > 0) {
@@ -102,6 +102,8 @@ public class Checkout {
                             break;
 
                         }
+
+                    }
 
                 }
 
